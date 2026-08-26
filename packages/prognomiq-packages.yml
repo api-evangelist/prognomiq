@@ -1,0 +1,72 @@
+generated: '2026-08-26'
+method: searched
+source: >-
+  Registry sweeps of npm, PyPI, RubyGems, crates.io, Packagist, NuGet and Maven Central for
+  "prognomiq"/"provue", plus the public GitHub organization https://github.com/prognomiq
+note: >-
+  PrognomiQ publishes no first-party client library, SDK or CLI in any public package registry.
+  Its GitHub organization ("PrognomiQ Inc.", 6 public repositories, homepage prognomiq.com) contains
+  only FORKS of third-party open-source data-engineering tooling used internally — cfDNApipe and the
+  Singer/PipelineWise taps and targets — none of which is a PrognomiQ-authored package and none of
+  which is published to a registry under a PrognomiQ namespace. No SDKs pointer is emitted.
+package_count: 0
+packages: []
+registries_probed:
+- registry: npm
+  query: prognomiq
+  results: 0
+- registry: npm
+  query: provue
+  results: 2
+  note: both matches rejected on ownership — see rejected[]
+- registry: pypi
+  query: prognomiq
+  status: 404
+- registry: rubygems
+  query: prognomiq
+  status: 404
+- registry: crates.io
+  query: prognomiq
+  status: 404
+- registry: packagist
+  query: prognomiq
+  status: 404
+- registry: nuget
+  query: prognomiq
+  results: 0
+- registry: maven-central
+  query: prognomiq
+  status: 200
+  note: search endpoint answered but returned no parseable result set for this query
+rejected:
+- name: "@provue/mcp"
+  registry: npm
+  version: 0.1.4
+  published: '2025-09-20'
+  url: https://www.npmjs.com/package/@provue/mcp
+  reason: >-
+    Name collision, not PrognomiQ. Package homepage is https://provue.ai and every npm maintainer
+    address is @provue.ai — a different company named Provue. PrognomiQ's product is ProVue Lung, a
+    laboratory developed test, and PrognomiQ's own domain is prognomiq.com.
+- name: provue.com
+  registry: n/a
+  reason: >-
+    Domain collision, not PrognomiQ. https://provue.com is ProVUE Developments' Panorama X database
+    software for macOS (HTTP 200, title "Panorama X Database Software for Macintosh").
+github_organization:
+  url: https://github.com/prognomiq
+  public_repos: 6
+  all_forks: true
+  repositories:
+  - name: cfDNApipe
+    fork: true
+  - name: pipelinewise-tap-s3-csv
+    fork: true
+  - name: pipelinewise-target-snowflake
+    fork: true
+  - name: tap-rest-api
+    fork: true
+  - name: tap-sharepointsites
+    fork: true
+  - name: tap-spreadsheets-anywhere
+    fork: true

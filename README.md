@@ -1,4 +1,4 @@
-# PrognomIQ
+# PrognomiQ
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,5 +64,9 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-PrognomIQ is a company surfaced via the API Evangelist harvest backlog (source: secondary-market) and added to the network as a stub for full-pipeline profiling.
-- https://www.nasdaqprivatemarket.com/
+PrognomiQ Inc. is a Redwood City, California multi-omics diagnostics company, spun out of Seer (NASDAQ: SEER) in 2020, that combines proteomic, genomic, transcriptomic and metabolomic measurement with machine learning to detect cancer and other complex diseases earlier from a blood draw. Its first commercial product, ProVue Lung, is a proteomics-based laboratory developed test (LDT) intended to aid early detection of lung cancer.
+
+As of 2026-08-26 PrognomiQ publishes no public API: no developer portal, no API reference, and no OpenAPI, AsyncAPI, GraphQL, gRPC, WSDL, MCP or A2A contract on any host the company controls. See `apis.yml` `x-coverage` for the probe record.
+
+- https://prognomiq.com/
+- https://github.com/prognomiq

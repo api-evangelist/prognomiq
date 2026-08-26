@@ -1,0 +1,16 @@
+generated: '2026-08-26'
+method: searched
+source: https://prognomiq.com/provue/
+note: >-
+  PrognomiQ publishes no pricing or plan page. ProVue Lung is a laboratory developed test ordered
+  through a healthcare provider — the site carries no list price, no self-serve purchase path and no
+  API plans, because PrognomiQ publishes no API. Access to the test is arranged through the company's
+  contact form and its Early Experience Program partners (Allegheny Health Network, Lung Innovations
+  Network at Penn Highlands Healthcare). Recorded as an honest zero.
+plan_count: 0
+plans: []
+evidence:
+- url: https://prognomiq.com/provue/
+  status: 200
+- url: https://prognomiq.com/contact/
+  status: 200

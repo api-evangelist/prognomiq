@@ -1,0 +1,17 @@
+generated: '2026-08-26'
+method: searched
+source: https://prognomiq.com/
+note: >-
+  PrognomiQ publishes no public API, so there are no documented rate limits, no published
+  rate-limit response headers and no exhaustion status code to record. The only machine-readable
+  HTTP surface served on prognomiq.com is the default WordPress REST API at /wp-json/ (the CMS's
+  own endpoint on a marketing site, not a product API), which documents no limits either.
+  Recorded as an honest zero.
+limit_count: 0
+rate_limits: []
+headers: []
+evidence:
+- url: https://prognomiq.com/
+  status: 200
+- url: https://prognomiq.com/wp-json/
+  status: 200

@@ -1,0 +1,39 @@
+generated: '2026-08-26'
+method: probed
+source: live GET probes of https://prognomiq.com/.well-known/*
+note: >-
+  PrognomiQ serves a single public host (prognomiq.com, a WordPress site; www.prognomiq.com 301s to
+  it). There is no API host, developer portal or console host to probe — no baseURL and no OpenAPI
+  servers[] entry exists for this company. Every /.well-known/ path probed returned a real HTTP 404,
+  not a soft-200 catch-all, so this is a recorded absence rather than an unreadable host. No
+  WellKnown or SecurityTxt pointer is emitted because no path returned a document.
+hit_count: 0
+hosts:
+- host: https://prognomiq.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+    file: null
+  - path: /.well-known/openid-configuration
+    status: 404
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+    file: null
+  - path: /.well-known/api-catalog
+    status: 404
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 404
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 404
+    file: null
+  - path: /.well-known/agent.json
+    status: 404
+    file: null
+soft_404_control:
+  probe: https://prognomiq.com/.well-known/openid-configuration
+  status: 404
+  bytes: 30162
+  body: WordPress theme 404 page (text/html), correctly returning a 404 status code
